@@ -42,7 +42,7 @@ fn calculate_total_duration(project: &Project) -> Duration {
         for session in sessions {
             if let Some(finished_at) = session.finished_at {
                 let duration = finished_at - session.started_at;
-                total = total + duration;
+                total += duration;
             }
         }
     }

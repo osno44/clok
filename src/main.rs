@@ -12,7 +12,7 @@ mod start;
 
 #[derive(Parser)]
 #[command(name = "clok")]
-#[command(about = "A simple time tracking tool for your projects", long_about = None)]
+#[command(about = "A simple time tracking tool for your Rust projects", long_about = None)]
 struct Cli {
     #[command(subcommand)]
     command: Commands,
